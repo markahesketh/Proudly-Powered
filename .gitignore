@@ -1,6 +1,8 @@
 # Project files
 *.sublime-*
+*.log
 
 # Nanoc specific
 output/
 tmp/
+

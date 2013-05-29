@@ -1,0 +1,503 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {    margin: 0;  padding: 0; border: 0;  vertical-align: baseline;    font: inherit;  font-size: 100%;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {    display: block;}body {  line-height: 1;}ol, ul {    list-style: none;}blockquote, q {   quotes: none;}blockquote:before, blockquote:after,q:before, q:after {   content: '';    content: none;}table {  border-spacing: 0;  border-collapse: collapse;}
+
+html {font-size: 62.5%;}
+body {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1000px;
+    background: #eaeaea;
+    color: #303030;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+footer {
+    clear: both;
+    padding: 20px 0 30px 0;
+    font-style: italic;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    background: #fddc7f;
+    color: #393939;
+}
+
+i,em {
+    font-style: italic;
+}
+
+b,strong {
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 0.5em 0;
+    color: #101010;
+    font-weight: normal;
+    font-family: Poly, Georgia, serif;
+    line-height: 1.25;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 36px;
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size: 24px;
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 21px;
+    font-size: 2.1rem;
+}
+
+h4 {
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+h5 {
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+h6 {
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+p {
+    margin-bottom: 1.6em;
+}
+
+pre {
+    margin-bottom: 1.6em;
+    padding: 10px;
+    display: block;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+#container {
+    margin-top: 40px;
+    padding: 40px 20px 0 20px;
+    height: 100%;
+    background: #fff;
+}
+
+#logo {
+    margin: 0 0 0.75em 0;
+    letter-spacing: -0.05em;
+    font-style: italic;
+    font-size: 36px;
+    font-size: 3.6rem;
+    font-family: Poly, Georgia, serif;
+    line-height: 0;
+}
+
+#logo a {
+    text-decoration: none;
+}
+
+#logo a:hover {
+    background: none;
+}
+
+.slogan {
+    display: block;
+    margin:  0 0 10px 0;
+    font-style: italic;
+}
+
+
+/* Modules
+============================================================================= */
+.content p a,
+.content li a {
+    color: #800000;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.content ol,
+.content ul {
+    margin: 0 0 1.6em 1.6em;
+}
+
+.content ol {
+    list-style-type: decimal;
+}
+
+.content ul {
+    list-style-type: disc;
+}
+
+.content li {
+    margin-bottom: 0.3em;
+}
+
+.content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    line-height: 0;
+}
+
+.content blockquote {
+    padding-left: 30px;
+    font-style: italic;
+    font-size: 1.3em;
+    font-family: Poly, Georgia, serif;
+    position: relative;
+    line-height: 1.4;
+}
+
+.content blockquote:before {
+    content: '\201C';
+    font-size: 3em;
+    position: absolute;
+    left: 0;
+    top: -15px;
+    color: #aaa;
+}
+
+.content blockquote code {
+    font-family: monospace;
+    font-style: normal;
+    font-size: 0.9em;
+}
+
+.content iframe {
+    margin-bottom: 1.6em;
+    width: 100%;
+}
+
+.sidebar {
+    padding: 30px 0;
+    border-top: 2px solid #393939;
+}
+
+.sidebar h4 {
+    padding-bottom: 0.2em;
+    border-bottom: 1px solid #a5a5a5;
+    font-style: italic;
+}
+
+.sidebar h5 {
+    padding: 5px 0;
+    padding-bottom: 0.2em;
+    border-bottom: 1px solid #d5d5d5;
+    font-style: italic;
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+.widget {
+    margin: 0 0 10px 0;
+    padding: 2%;
+}
+
+.widget > ul > li {
+    font-style: italic;
+    font-size: 15px;
+    font-size: 1.5rem;
+    font-family: Poly, Georgia, serif;
+}
+
+.widget ul a {
+    text-decoration: none;
+}
+
+.widget ul ul {
+    margin: 0 0 1em 1.6em;
+    list-style-type: square;
+}
+
+.widget li {
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+.alert {
+    margin-bottom: 1.6em;
+    padding: 1em;
+    border: 1px solid #6cb4d3;
+    background: #afd8ea;
+    font-style: italic;
+}
+
+.article-listing {
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.article-listing:last-child {
+    border-bottom: 0;
+}
+
+.article-listing img {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.thumbnail:hover {
+    background: none;
+}
+
+.thumbnail img {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.navigation {
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+.navigation a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+.navigation-top {
+    border-top: 0;
+    border-bottom: 0;
+    background: #393939;
+    color: #fff;
+}
+
+.navigation-top a {
+    color: #fff;
+}
+
+.navigation-top a:hover {
+    color: #303030;
+}
+
+
+.navigation-main {
+    border-top: 5px solid #393939;
+    border-bottom: 1px solid #909090;
+}
+
+select.navigation-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url(../img/background-mobile-nav-icon.gif) #393939 center right no-repeat;
+}
+
+select.navigation-main {
+    background: url(../img/background-black-down-arrow.gif) center right no-repeat;
+}
+
+nav.navigation {
+    display: none;
+}
+
+select.navigation {
+    overflow: hidden;
+    padding: 0 10px;
+    outline: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.list-horizontal li {
+    display: block;
+    float: left;
+}
+
+.pagination {
+    margin: 20px 0;
+    height: 30px;
+}
+
+.pagination .older {
+    float: left;
+}
+
+.pagination .newer {
+    float: right;
+}
+
+.btn {
+    padding: 5px 10px;
+    background: #393939;
+    color: #fff;
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+
+.btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.align-center {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Clear fix */
+.cf:before,
+.cf:after {
+    display: table;
+    content: " ";
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* Tablet portrait
+============================================================================= */
+@media only screen and (min-width: 480px) {
+
+    body {
+        padding: 0 20px;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 42px;
+        font-size: 4.2rem;
+    }
+
+    h2 {
+        font-size: 28px;
+        font-size: 2.8rem;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-size: 2.4rem;
+    }
+
+    h4 {
+        font-size: 21px;
+        font-size: 2.1rem;
+    }
+
+    h5 {
+        font-size: 18px;
+        font-size: 1.8rem;
+    }
+
+    h6 {
+        font-size: 16px;
+        font-size: 1.6rem;
+    }
+
+    pre {
+        padding: 20px;
+    }
+
+    .slogan {
+        margin-bottom: 15px;
+    }
+
+    .align-right {
+        display: block;
+        float: right;
+        margin: 0 0 2em 2em;
+    }
+
+    .align-left {
+        display: block;
+        float: left;
+        margin: 0 2em 2em 0;
+    }
+
+    /* Switch navigation method */
+    nav.navigation {
+        display: block;
+        font-size: inherit;
+        font-family: Poly, Georgia, serif;
+    }
+
+    select.navigation {
+        display: none;
+    }
+
+    .widget {
+        float: left;
+        width: 46%;
+    }
+
+}
+
+/* Tablet Landscape
+============================================================================= */
+@media only screen and (min-width: 768px) {
+    .content {
+        float: left;
+        width: 62%;
+    }
+    .sidebar {
+        float: right;
+        padding: 0;
+        width: 35%;
+        border-top-style: none;
+    }
+
+    .widget {
+        float: none;
+        padding: 5px 0;
+        width: 100%;
+    }
+}
+
+/* Desktop
+============================================================================= */
+@media only screen and (min-width: 992px) {
+}

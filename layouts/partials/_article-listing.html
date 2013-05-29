@@ -1,0 +1,6 @@
+<article class="article-listing">
+    <%= show_thumbnail article %>
+    <h2><%= link_to article[:title], article.path, :title => article[:title] %></h2>
+    <p><%= article[:summary] %></p>
+    <%= link_to 'Read more', article.path, :title => article[:title] %>
+</article>

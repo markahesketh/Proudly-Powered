@@ -1,0 +1,24 @@
+<%
+    # Get section's slug
+    slug = @item[:slug]
+
+    # Get current page
+    page = item.identifier.split('/').last.to_i
+
+    # Check if an older page exists
+    previous = @items.find { |i| i.identifier == item.identifier.gsub("/#{page}/", "/#{page+1}/") }
+%>
+<div class="pagination">
+    <% # Older Articles %>
+    <% if previous %>
+        <a href="<%= slug %><%= page + 1 %>/" class="btn older">&lsaquo; Older <%= @item[:type] %></a>
+    <% end %>
+
+    <% # Newer Articles %>
+    <% if page == 2 %>
+        <a href="<%= slug %>" class="btn newer">Newer Articles &rsaquo;</a>
+    <% elsif page != 1 %>
+        <a href="<%= slug %><%= page - 1 %>/" class="btn newer">Newer <%= @item[:type] %> &rsaquo;</a>
+    <% end %>
+
+</div>

@@ -1,0 +1,6 @@
+<div class="widget widget-recent-posts">
+    <h4>Recent Articles</h4>
+    <% sorted_articles[0..4].each do |article| %>
+        <h5><%= link_to article[:title], article.path, :title => article[:title] %></h5>
+    <% end %>
+</div>

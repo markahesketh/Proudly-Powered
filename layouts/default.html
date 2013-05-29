@@ -1,29 +1,69 @@
-<!DOCTYPE HTML>
-<html lang="en">
-  <head>
+<!DOCTYPE html>
+<!--[if lt IE 7]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>                 <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>                 <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
     <meta charset="utf-8">
-    <title>A Brand New nanoc Site - <%= @item[:title] %></title>
-    <link rel="stylesheet" href="/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title><%= create_title %></title>
+    <meta name="viewport" content="width=device-width">
+    <link href="http://fonts.googleapis.com/css?family=Poly:400,400italic" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/-/css/normalize.css">
+    <link rel="stylesheet" href="/-/css/global.css">
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+    <nav class="navigation navigation-top">
+        <ul class="list-horizontal">
+            <li><a href="/">Home</a></li>
+            <li><a href="/resources/">Resources</a></li>
+            <li><a href="/recommendations/">Recommendations</a></li>
+            <li><a href="/about/">About</a></li>
+        </ul>
+    </nav>
+    <select class="navigation navigation-top" data-action="select-navigation">
+        <option value="">Navigation</option>
+        <option value="/">Home</option>
+        <option value="/resources/">Resources</option>
+        <option value="/recommedations/">Recommendations</option>
+        <option value="/about/">About</option>
+    </select>
 
-    <!-- you don't need to keep this, but it's cool for stats! -->
-    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>"> 
-  </head>
-  <body>
-    <div id="main">
-      <%= yield %>
+    <div id="container" class="cf">
+        <header>
+            <%= create_logo 'Proudly Powered' %>
+            <span class="slogan">Which is the best CMS for you?</span>
+
+            <nav class="navigation navigation-main">
+                <ul class="list-horizontal">
+                    <li><a href="/category/wordpress/">WordPress</a></li>
+                </ul>
+            </nav>
+            <select class="navigation navigation-main" data-action="select-navigation">
+                <option value="">Choose a CMS</option>
+                <option value="/category/wordpress/">WordPress</option>
+            </select>
+            </select>
+        </header>
+        <div id="main">
+            <%= yield %>
+        </div>
     </div>
-    <div id="sidebar">
-      <h2>Documentation</h2>
-      <ul>
-        <li><a href="http://nanoc.ws/docs/">Documentation</a></li>
-        <li><a href="http://nanoc.ws/docs/tutorial/">Getting Started</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion Group</a></li>
-        <li><a href="irc://chat.freenode.net/#nanoc">IRC Channel</a></li>
-        <li><a href="http://github.com/nanoc/nanoc/wiki/">Wiki</a></li>
-      </ul>
-    </div>
-  </body>
+
+    <footer>
+        <p><small>&copy; 2013 Proudly Powered. All Rights Reserved</small>.</p>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/-/js/vendor/jquery-191.js"><\/script>')</script>
+    <script src="/-/js/global.js"></script>
+
+    <script>
+    var _gaq=[['_setAccount','UA-10221234-8'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+</body>
 </html>

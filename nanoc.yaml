@@ -1,3 +1,9 @@
+# Used for generating sitemaps, RSS etc
+base_url: http://proudlypowered.com
+
+# Number of articles to show per page
+page_size: 8
+
 # A list of file extensions that nanoc will consider to be textual rather than
 # binary. If an item with an extension not in this list is found,  the file
 # will be considered as binary.
@@ -75,3 +81,12 @@ watcher:
   # When to send notifications (using Growl or notify-send).
   notify_on_compilation_success: true
   notify_on_compilation_failure: true
+
+# Deploy options
+deploy:
+  default:
+    kind: rsync
+    dst:  "raditz:/var/www/proudlypowered.com/public_html/nanoc"
+  dev:
+    kind: rsync
+    dst:  "raditz:/var/www/proudlypowered.com/subdomains/dev/public_html/nanoc"

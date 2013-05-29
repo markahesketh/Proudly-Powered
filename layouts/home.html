@@ -1,0 +1,8 @@
+<% render 'default' do %>
+    <div class="content">
+        <% sorted_articles.each do |article| %>
+            <%= render "partials/_article-listing", :article => article %>
+        <% end %>
+    </div>
+    <%= render 'partials/_sidebar' %>
+<% end %>

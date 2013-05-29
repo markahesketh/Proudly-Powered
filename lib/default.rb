@@ -10,11 +10,10 @@ module LayoutHelper
     #
     #   If on homepage use item title, otherwise use slogan
     def create_title
-        page_title = @item[:title]
         if item.identifier == '/'
-          'Proudly Powered | CMS reviews and advice for web designers, bloggers and business owners'
+          'Proudly Powered | ' + @item[:title]
         else
-          page_title + ' | Proudly Powered' if page_title
+          @item[:title] + ' | Proudly Powered' if @item[:title]
         end
     end
 
@@ -26,6 +25,28 @@ module LayoutHelper
         tag ||= 'div'
 
         "<" + tag + " id=\"logo\"><a href=\"/\">" + text + "</a></" + tag + ">"
+    end
+
+    # Create the meta description
+    def create_meta_description
+        '<meta name="description" content="' + item[:description] + '"/>' if item[:description]
+    end
+
+    # Create twitter card
+    def create_twitter_card
+        page_title = create_title
+        page_description = @item[:summary]
+        page_description ||= @item[:description]
+        page_thumbnail = "/media/thumbnails/#{item[:thumbnail]}"
+
+        twitter_card = []
+        twitter_card << "<meta name=\"twitter:card\" content=\"summary\">"
+        twitter_card << "<meta name=\"twitter:site\" content=\"@proudlypowered\">"
+        twitter_card << "<meta name=\"twitter:creator\" content=\"@markyhesketh\">"
+        twitter_card << "<meta name=\"twitter:title\" content=\"#{page_title}\">" if page_title
+        twitter_card << "<meta name=\"twitter:description\" content=\"#{page_description}\">" if page_description
+        twitter_card << "<meta name=\"twitter:image\" content=\"#{page_thumbnail}\">" if item[:thumbnail]
+        twitter_card.join("\n")
     end
 
 end

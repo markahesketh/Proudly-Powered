@@ -11,8 +11,8 @@ categories:
 - WordPress Plugins
 ---
 
-Since putting [Proudly Powered online just
-yesterday](http://proudlypowered.com/hello-world/), I have had to go
+Since putting Proudly Powered online just
+yesterday, I have had to go
 through the usual steps of installing recommended WordPress plugins to
 enhance the website.
 

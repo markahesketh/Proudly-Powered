@@ -13,18 +13,18 @@ Disclosure: Some of these recommendations are affiliate links, <i>and at no addi
 
 ## Web Hosting
 
-*   [Linode](http://proudlypowered.com/linode/) Fantastic virtual servers web host I have been a happy customer of since January 2012. Servers come 'as-is' giving you full control although you'll need some technical knowledge, or a developer friend/colleague to get set up. Linode has a great wiki to get you started.
+*   [Linode](http://proudlypowered.com/linode/){:target="_blank"} Fantastic virtual servers web host I have been a happy customer of since January 2012. Servers come 'as-is' giving you full control although you'll need some technical knowledge, or a developer friend/colleague to get set up. Linode has a great wiki to get you started.
 
 ## SEO / Keyword Research
 
-*   [Long Tail Pro](http://proudlypowered.com/longtailpro/ "Long Tail Pro") A user-friendly and **highly recommended** keyword research tool that I use regularly. Find keywords to target with your content and analyse your website's competition within your niche or subject.
-*   [Google Adwords Tool](https://adwords.google.com/o/Targeting/Explorer?__c=1000000000&amp;__u=1000000000&amp;ideaRequestType=KEYWORD_IDEAS) Helpful for choosing keywords if you're considering an AdWords campaign. Can also be used as a keyword research tool for your website's content.
-*   [Serpfox](http://www.serpfox.com/) Clean and simple web app to easily track your website's position in Google's rankings. You can track up to 10 keywords for _free_, with monthly plans available if you'd like to track more.
-*   [SEO Starter Guide](http://static.googleusercontent.com/external_content/untrusted_dlcp/www.google.co.uk/en/uk/webmasters/docs/search-engine-optimization-starter-guide.pdf "SEO Starter Guide") Google's easy to understand starter guide to help you laern the basics of SEO and creating a search-engine friendly website.
-*   [Advanced Guide to SEO](http://www.quicksprout.com/the-advanced-guide-to-seo/ "Advanced Guide to SEO") Neil Patel's fantastic, in-depth and free guide to just about everything on slightly more advanced SEO techniques.
+*   [Long Tail Pro](http://proudlypowered.com/longtailpro/ "Long Tail Pro"){:target="_blank"} A user-friendly and **highly recommended** keyword research tool that I use regularly. Find keywords to target with your content and analyse your website's competition within your niche or subject.
+*   [Google Adwords Tool](https://adwords.google.com/o/Targeting/Explorer?__c=1000000000&amp;__u=1000000000&amp;ideaRequestType=KEYWORD_IDEAS){:target="_blank"} Helpful for choosing keywords if you're considering an AdWords campaign. Can also be used as a keyword research tool for your website's content.
+*   [Serpfox](http://www.serpfox.com/){:target="_blank"} Clean and simple web app to easily track your website's position in Google's rankings. You can track up to 10 keywords for _free_, with monthly plans available if you'd like to track more.
+*   [SEO Starter Guide](http://static.googleusercontent.com/external_content/untrusted_dlcp/www.google.co.uk/en/uk/webmasters/docs/search-engine-optimization-starter-guide.pdf "SEO Starter Guide"){:target="_blank"} Google's easy to understand starter guide to help you laern the basics of SEO and creating a search-engine friendly website.
+*   [Advanced Guide to SEO](http://www.quicksprout.com/the-advanced-guide-to-seo/ "Advanced Guide to SEO"){:target="_blank"} Neil Patel's fantastic, in-depth and free guide to just about everything on slightly more advanced SEO techniques.
 
 ## Writing
 
-*   [iA Writer](http://www.iawriter.com/mac/ "iA Writer") My choice markdown editor on OSX. The almost non-existent user interface helps me to really focus on what I'm writing. The best praise I can give is that it's a pleasure to use.
-*   [MarkdownPad](http://markdownpad.com/ "MarkdownPad")(Win) and [Dillenger](http://dillinger.io/ "Dillenger")(Web) are both good markdown editor alternatives.
-*   [Rainy Mood](http://www.rainymood.com/ "Rainy Mood") Ambient background noise I often listen to so I can focus on my work/writing instead of distracting music. Press play, minimise and really focus. Give it a try.
+*   [iA Writer](http://www.iawriter.com/mac/ "iA Writer"){:target="_blank"} My choice markdown editor on OSX. The almost non-existent user interface helps me to really focus on what I'm writing. The best praise I can give is that it's a pleasure to use.
+*   [MarkdownPad](http://markdownpad.com/ "MarkdownPad"){:target="_blank"}(Win) and [Dillenger](http://dillinger.io/ "Dillenger"){:target="_blank"}(Web) are both good markdown editor alternatives.
+*   [Rainy Mood](http://www.rainymood.com/ "Rainy Mood"){:target="_blank"} Ambient background noise I often listen to so I can focus on my work/writing instead of distracting music. Press play, minimise and really focus. Give it a try.

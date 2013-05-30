@@ -34,19 +34,52 @@ module LayoutHelper
 
     # Create twitter card
     def create_twitter_card
-        page_title = create_title
-        page_description = @item[:summary]
-        page_description ||= @item[:description]
-        page_thumbnail = "/media/thumbnails/#{item[:thumbnail]}"
+        title = create_title
+        description = @item[:summary] || @item[:description]
+        thumbnail = "#{site.config[:base_url]}/media/thumbnails/#{item[:thumbnail]}"
 
         twitter_card = []
         twitter_card << "<meta name=\"twitter:card\" content=\"summary\">"
         twitter_card << "<meta name=\"twitter:site\" content=\"@proudlypowered\">"
         twitter_card << "<meta name=\"twitter:creator\" content=\"@markyhesketh\">"
-        twitter_card << "<meta name=\"twitter:title\" content=\"#{page_title}\">" if page_title
-        twitter_card << "<meta name=\"twitter:description\" content=\"#{page_description}\">" if page_description
-        twitter_card << "<meta name=\"twitter:image\" content=\"#{page_thumbnail}\">" if item[:thumbnail]
+        twitter_card << "<meta name=\"twitter:title\" content=\"#{title}\">" if title
+        twitter_card << "<meta name=\"twitter:description\" content=\"#{description}\">" if description
+        twitter_card << "<meta name=\"twitter:image\" content=\"#{thumbnail_url}\">" if item[:thumbnail]
         twitter_card.join("\n")
+    end
+
+    # Create Opengraph
+    def create_opengraph
+        type = 'website' if item.identifier == '/'
+        type ||= 'article'
+
+        title = create_title if item.identifier == '/'
+        title ||= @item[:title]
+
+        description = @item[:summary] || @item[:description]
+
+        opengraph = []
+        opengraph << "<meta property=\"og:type\" content=\"#{type}\">"
+        opengraph << "<meta property=\"og:site_name\" content=\"Proudly Powered\">" if item.identifier != '/'
+        opengraph << "<meta property=\"og:title\" content=\"#{title}\">"
+        opengraph << "<meta property=\"og:url\" content=\"#{current_url}\">"
+        opengraph << "<meta property=\"og:image\" content=\"#{thumbnail_url}\">" if item[:thumbnail]
+        opengraph << "<meta property=\"og:description\" content=\"#{description}\">" if description
+        opengraph.join("\n")
+    end
+
+    # Canonical URL
+    def create_canonical
+      "<link rel=\"canonical\" href=\"#{current_url}\" />"
+    end
+
+    # Get current URL
+    def current_url(item=item)
+      "#{site.config[:base_url]}#{item.path}"
+    end
+
+    def thumbnail_url(item=item)
+      "#{site.config[:base_url]}/media/thumbnails/#{item[:thumbnail]}"
     end
 
 end

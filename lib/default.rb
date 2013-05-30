@@ -73,6 +73,10 @@ module LayoutHelper
       "<link rel=\"canonical\" href=\"#{current_url}\" />"
     end
 
+    def create_rss_link
+      "<link rel=\"alternate\" type=\"application/atom+xml\" title=\"Proudly Powered RSS\" href=\"#{site.config[:base_url]}/feed.xml\">"
+    end
+
     # Get current URL
     def current_url(item=item)
       "#{site.config[:base_url]}#{item.path}"

@@ -16,8 +16,6 @@
 #
 # @todo extract hidden file types into configuration file?
 def create_sitemap
-  # return unless @site.config[:output_generated_assets]
-
   @items.each do |item|
     if %w{png gif jpg jpeg coffee scss sass conf less css xml js txt ico}.include?(item[:extension]) ||
         item.identifier =~ /404|500|htaccess|google59d36f32ac93e5ca|google402908db7c07eb10/
@@ -28,5 +26,19 @@ def create_sitemap
     "<%= xml_sitemap %>",
     { :extension => 'xml', :is_hidden => true },
     '/sitemap/'
+  )
+end
+
+def create_rss
+  @items << Nanoc3::Item.new(
+    "<%= atom_feed %>",
+    {
+      :extension => 'xml',
+      :is_hidden => true,
+      :title => "Proudly Powered",
+      :author_name => "Mark Hesketh",
+      :author_uri => "http://www.proudlypowered.com/"
+    },
+    '/feed/'
   )
 end

@@ -13,6 +13,7 @@ preprocess do
     create_category_pages
 
     create_sitemap
+    create_rss
 end
 
 

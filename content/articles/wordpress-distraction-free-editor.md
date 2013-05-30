@@ -3,9 +3,9 @@ created_at: 29 February 2012
 publish: true
 kind: article
 title: WordPress Distraction Free Editor Overview
-description: Wordpress' distraction free editor means you really concentrate on content. Full attention to content means you'll write and rank better.
+description: WordPress' distraction free editor means you really concentrate on content. Full attention to content means you'll write and rank better.
 thumbnail: wordpress-distraction-free-editor.gif
-summary: Wordpress' distraction free editor means you really concentrate on content. Full attention to content means you'll write and rank better.
+summary: WordPress' distraction free editor means you really concentrate on content. Full attention to content means you'll write and rank better.
 categories:
 - WordPress
 - WordPress Techniques

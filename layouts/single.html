@@ -5,6 +5,7 @@
             <%= published_date if @item[:created_at] %>
             <%= yield %>
         </article>
+        <%= render 'partials/_comments' %>
     </div>
     <%= render 'partials/_sidebar' %>
 <% end %>

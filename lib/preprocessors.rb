@@ -19,7 +19,7 @@ def create_sitemap
   # return unless @site.config[:output_generated_assets]
 
   @items.each do |item|
-    if %w{png gif jpg jpeg coffee scss sass less css xml js txt ico}.include?(item[:extension]) ||
+    if %w{png gif jpg jpeg coffee scss sass conf less css xml js txt ico}.include?(item[:extension]) ||
         item.identifier =~ /404|500|htaccess|google59d36f32ac93e5ca|google402908db7c07eb10/
       item[:is_hidden] = true unless item.attributes.has_key?(:is_hidden)
     end

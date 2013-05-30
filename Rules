@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-BYPASS_FILES = %w(404.html crossdomain.xml robots.txt BingSiteAuth.xml google59d36f32ac93e5ca.html google402908db7c07eb10.html) unless defined?(BYPASS_FILES)
+BYPASS_FILES = %w(404.html nginx.conf crossdomain.xml robots.txt BingSiteAuth.xml google59d36f32ac93e5ca.html google402908db7c07eb10.html) unless defined?(BYPASS_FILES)
 
 # PREPROCESS
 ################################################################################

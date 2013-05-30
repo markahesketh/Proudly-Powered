@@ -1,6 +1,6 @@
-<article class="article-listing">
+<article class="article-listing" itemscope itemtype="http://schema.org/Article">
     <%= show_thumbnail article %>
-    <h2><%= link_to article[:title], article.path, :title => article[:title] %></h2>
-    <p><%= article[:summary] %></p>
+    <h2 itemprop="headline"><%= link_to article[:title], article.path, :title => article[:title] %></h2>
+    <p itemprop="description"><%= article[:summary] %></p>
     <%= link_to 'Read more', article.path, :title => article[:title] %>
 </article>

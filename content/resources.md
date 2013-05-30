@@ -1,5 +1,4 @@
 ---
-created_at: 2 March 2012
 title: Resources
 kind: page
 ---

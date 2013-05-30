@@ -274,6 +274,12 @@ pre {
     margin-bottom: 1em;
 }
 
+.article-date {
+    font-family: Poly, Georgia, serif;
+    font-style: italic;
+    margin-top: 0;
+}
+
 .thumbnail:hover {
     background: none;
 }

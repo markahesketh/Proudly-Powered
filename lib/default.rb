@@ -88,10 +88,23 @@ include LayoutHelper
 
 module PostHelper
 
+
+  def published_date(item=item)
+    timestamp = get_timestamp_date item
+    prettydate = get_pretty_date item
+    "<p class=\"article-date\">Published <time datetime=\"#{timestamp}\" itemprop=\"datePublished\">#{prettydate}</time></p>"
+  end
+
   # Prettify item dates
   def get_pretty_date(post)
     time = attribute_to_time(post[:created_at])
-    time.strftime("%B #{time.day.ordinalize} %Y")
+    time.strftime("%B #{time.day.ordinalize}, %Y")
+  end
+
+  # Timestamp item dates
+  def get_timestamp_date(post)
+    time = attribute_to_time(post[:created_at])
+    time.strftime("%Y-%m-%d")
   end
 
   # 1st, 2nd, 3rd, 4th
@@ -112,7 +125,7 @@ module PostHelper
     if post[:thumbnail]
       filename = post[:thumbnail].to_s
       alt = post[:title].to_s
-      image = '<img src="/media/thumbnails/' + filename + '" alt="' + alt + '"/>'
+      image = '<img src="/media/thumbnails/' + filename + '" alt="' + alt + '" itemprop="thumbnailUrl"/>'
       link_to image, article.path, :title => article[:title]
     end
   end

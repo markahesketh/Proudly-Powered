@@ -1,7 +1,10 @@
 <% render 'default' do %>
     <div class="content">
-        <h1><%= @item[:title] %></h1>
-        <%= yield %>
+        <article itemscope itemtype="http://schema.org/Article">
+            <h1 itemprop="headline"><%= @item[:title] %></h1>
+            <%= published_date if @item[:created_at] %>
+            <%= yield %>
+        </article>
     </div>
     <%= render 'partials/_sidebar' %>
 <% end %>

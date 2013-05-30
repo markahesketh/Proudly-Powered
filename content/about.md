@@ -1,5 +1,4 @@
 ---
-created_at: 24 May 2012
 title: About
 kind: page
 ---

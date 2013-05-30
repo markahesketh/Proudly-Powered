@@ -5,8 +5,8 @@ html {font-size: 62.5%;}
 body {
     margin: 0 auto;
     padding: 0 10px;
-    max-width: 1000px;
     min-width: 280px;
+    max-width: 1000px;
     background: #eaeaea;
     color: #303030;
     font-size: 14px;
@@ -103,12 +103,12 @@ p {
 }
 
 pre {
+    display: block;
     margin-bottom: 1.6em;
     padding: 10px;
-    display: block;
     border: 1px solid #ccc;
-    font-family: monospace;
     white-space: pre-wrap;
+    font-family: monospace;
 }
 
 #container {
@@ -177,27 +177,27 @@ pre {
 }
 
 .content blockquote {
+    position: relative;
     padding-left: 30px;
     font-style: italic;
     font-size: 1.3em;
     font-family: Poly, Georgia, serif;
-    position: relative;
     line-height: 1.4;
 }
 
 .content blockquote:before {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    color: #aaa;
     content: '\201C';
     font-size: 3em;
-    position: absolute;
-    left: 0;
-    top: -15px;
-    color: #aaa;
 }
 
 .content blockquote code {
-    font-family: monospace;
     font-style: normal;
     font-size: 0.9em;
+    font-family: monospace;
 }
 
 .content iframe {
@@ -275,9 +275,9 @@ pre {
 }
 
 .article-date {
-    font-family: Poly, Georgia, serif;
-    font-style: italic;
     margin-top: 0;
+    font-style: italic;
+    font-family: Poly, Georgia, serif;
 }
 
 .thumbnail:hover {

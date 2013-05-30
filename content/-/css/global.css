@@ -6,6 +6,7 @@ body {
     margin: 0 auto;
     padding: 0 10px;
     max-width: 1000px;
+    min-width: 280px;
     background: #eaeaea;
     color: #303030;
     font-size: 14px;

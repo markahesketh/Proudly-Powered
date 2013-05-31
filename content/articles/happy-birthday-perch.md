@@ -8,7 +8,7 @@ thumbnail: happy-birthday-perch.jpg
 summary: Perch is a 'really little' CMS created by edgeofmyseat, and is today celebrating its 4th birthday!
 categories:
 - Perch
-- Headlines
+- News
 ---
 
 ![Happy Birthday Perch](/media/thumbnails/happy-birthday-perch.jpg)

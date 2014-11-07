@@ -86,7 +86,4 @@ watcher:
 deploy:
   default:
     kind: rsync
-    dst:  "raditz:/var/www/proudlypowered.com/public_html/nanoc"
-  dev:
-    kind: rsync
-    dst:  "raditz:/var/www/proudlypowered.com/subdomains/dev/public_html/nanoc"
+    dst:  "deploy:/srv/www/proudlypowered.com"

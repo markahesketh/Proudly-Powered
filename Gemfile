@@ -1,4 +1,5 @@
-source :rubygems
+source 'https://rubygems.org'
+
 # nanoc
 gem 'nanoc',                '~>3.4'
 gem 'adsf',                 '~>1.1'

@@ -1,15 +1,15 @@
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
-    adsf (1.1.1)
+    adsf (1.2.0)
       rack (>= 1.0.0)
-    builder (3.2.0)
+    builder (3.2.2)
     colored (1.2)
-    cri (2.3.0)
-      colored (>= 1.2)
+    cri (2.6.1)
+      colored (~> 1.2)
     kramdown (1.0.2)
-    mime-types (1.23)
-    nanoc (3.6.3)
+    mime-types (1.25.1)
+    nanoc (3.7.3)
       cri (~> 2.3)
     rack (1.5.2)
     systemu (2.5.2)
